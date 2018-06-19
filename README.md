@@ -12,7 +12,7 @@ http://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis2.surface.html
 
 ## Comment
 
-To be honest, **GDAL** is pretty unwieldy for most scientific data formats such as NetCDF or HDF5 files. It is because these data are commonly packed using scalor and add_offset. When reading a variable, have to take these into consideration. If you know other tools such as ncdump, you can try ncdump -h infile.nc to check the scalor and add_offset.
+To be honest, **GDAL** is pretty unwieldy for most scientific data formats such as NetCDF or HDF5 files. It is because these data are commonly packed using **scalor** and **add_offset**. When reading a variable, have to take these into consideration. If you know other tools such as ncdump, you can try **ncdump -h infile.nc** to check the scalor and add_offset.
 
 Under such a condition, you can read the variable using the following code:
 
